@@ -107,6 +107,11 @@ namespace BokhyllanB.UI.ViewModel
         private bool CanDelete()
         {
             // Verify command can be executed here
+            
+            
+            if (_selectedBook == null)
+                return false; 
+            else
                 return true;
         }
 
@@ -138,6 +143,7 @@ namespace BokhyllanB.UI.ViewModel
 
         private bool CanSave()
         {
+            
             // Verify command can be executed here
             return true;
         }
